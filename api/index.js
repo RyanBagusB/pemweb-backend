@@ -2,8 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import Produk from "./models/Produk.js";
-import Testimoni from "./models/Testimoni.js";
+import Produk from "../models/Produk.js";
+import Testimoni from "../models/Testimoni.js";
 
 dotenv.config();
 
