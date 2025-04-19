@@ -18,8 +18,6 @@ mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB connection error:", err));
 
-// === PRODUK ROUTES ===
-
 app.get("/produk", async (req, res) => {
   try {
     const produk = await Produk.find();
@@ -70,8 +68,6 @@ app.delete("/produk/:id", async (req, res) => {
     res.status(400).json({ message: "Gagal menghapus produk", error: err.message });
   }
 });
-
-// === TESTIMONI ROUTES ===
 
 app.get("/testimoni", async (req, res) => {
   try {
