@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const testimoniSchema = new mongoose.Schema({
-  id: { type: String, required: true },
+  _id: { type: String, required: true },
   namaPengirim: { type: String, required: true },
   fotoProduk: { type: String, required: true },
   rating: { type: Number, required: true },
